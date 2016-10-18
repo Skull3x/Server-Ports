@@ -25,12 +25,12 @@ class EventListener implements Listener
 		$event->setJoinMessage(F::sys("Quit", $event->getPlayer()->getName());
 	}
 	
-	public function onBreak(BlcokBreakEvent $event)
+	public function onBreak(BlockBreakEvent $event)
 	{
 		$event->setCancelled(true);
 	}
 	
-	public function onPlace(BlcokPlaceEvent $event)
+	public function onPlace(BlockPlaceEvent $event)
 	{
 		$event->setCancelled(true);
 	}
